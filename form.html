@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formular | Eventnavn</title>
+  <title>Det Sønderjyske Kaffebord I København</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
-</head>
+  <link rel="icon" type="image/png" sizes="16x16" href="EventBilleder/lilleLogo.png" </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./">Det Sønderjyske Kaffebord I København</a>
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
+          <li><a href="./svg.html">Historien Bag</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
         </ul>
       </nav>
     </div>
@@ -26,19 +26,74 @@
 
   <main>
     <section class="form-page">
-      <header class="form-intro">
-        <h1>Formular</h1>
-        <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
-      </header>
 
-      <form class="form-placeholder" action="./opsamling.html"></form>
+      <h1>Tilmeld dig til vores næste event!</h1>
+
+      <div class="form-layout">
+
+        <!-- Billede til venstre -->
+        <img src="./EventBilleder/Roulade og kaffekande.svg" alt="En roulade og en kaffekande">
+
+        <!-- Formularboks -->
+        <form class="form-box" action="./opsamling.html" method="GET">
+
+          <label for="name">Navn:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Tlf-nr:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <fieldset>
+            <legend>Dato for event:</legend>
+
+            <label>
+              <input type="radio" name="date" value="dato1" required>
+              1/12-2026
+            </label>
+
+            <label>
+              <input type="radio" name="date" value="dato2">
+              15/12-2026
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Valg af kage:</legend>
+
+            <label>
+              <input type="radio" name="cake" value="Roulade" required>
+              Roulade
+            </label>
+
+            <label>
+              <input type="radio" name="cake" value="lagkage">
+              Lagkage
+            </label>
+
+            <label>
+              <input type="radio" name="cake" value="småkager">
+              Småkager
+            </label>
+          </fieldset>
+
+          <button type="submit">Tilmeld</button>
+
+        </form>
+
+        <!-- Billede til højre -->
+        <img src="./EventBilleder/billed til formular, vase.svg" alt="blomster i vase">
+
+      </div>
     </section>
-  </main>
 
+  </main>
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Det Sønderjyske Kaffebord i København</p>
+      <p>Copyright © Laura og Lisa</p>
     </div>
   </footer>
   <script src="./script.js"></script>

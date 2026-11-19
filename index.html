@@ -4,32 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventnavn</title>
+  <title>Det Sønderjyske Kaffebord</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
-</head>
+  <link rel="icon" type="image/png" sizes="16x16" href="EventBilleder/lilleLogo.png" </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./">
+        <img src="./EventBilleder/logo til styletile.png" alt="Sønderjysk kaffebord">
+      </a>
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./" aria-current="page">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a href="./svg.html">Historien Bag</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
         </ul>
       </nav>
+      <img class="guirlande" src="./EventBilleder/guirlandeFærdig.svg" alt="">
     </div>
   </header>
 
-  <main></main>
+  <main class="frontpage">
+
+    <div class="frontpage-content">
+      <section class="intro">
+        <h1>Det sønderjyske kaffebord i København</h1>
+        <a href="./form.html" class="cta">Kom og vær' med!</a>
+      </section>
+      <div class="popup"><button class="popup-button">Hvorfor bringer vi det sønderjyske kaffebord til
+          København?</button>
+        <div class="popup-text">
+          <p>Alle elsker kage og mennesket er et flokdyr der elsker
+            selvskab. Derfor bringer vi traditionen til København, så københavnerne også kan mærke glæden ved fælleskab
+            og kage.</p>
+        </div>
+      </div>
+
+      <div class="popupto"><button class="popupto-button">Hvem må komme med og hvad kræver det?</button>
+        <div class="popupto-text">
+          <p>Alle må være med! Man skal blot medbringe en kage af eget valg og godt humør.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="side-image">
+      <img src="./EventBilleder/Tegnebræt 6.svg" alt="Sønderjysk kaffebord">
+    </div>
+
+  </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Det Sønderjyske Kaffebord i København</p>
+      <p>Copyright © Laura og Lisa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
