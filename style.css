@@ -380,7 +380,7 @@ header {
 }
 @font-face {
   font-family: "Bowlby One";
-  src: url("../skrifttyper/BowlbyOne-Regular.ttf") format("truetype");
+  src: url("./skrifttyper/BowlbyOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
