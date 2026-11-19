@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opsamling | Eventnavn</title>
+  <title>Det Sønderjyske Kaffebord</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
-</head>
+  <link rel="icon" type="image/png" sizes="16x16" href="EventBilleder/lilleLogo.png" </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./">Det Sønderjyske Kaffebord I København</a>
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
+          <li><a href="./svg.html">Historien Bag</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
         </ul>
       </nav>
     </div>
@@ -27,23 +27,33 @@
   <main>
     <section class="opsamling-page">
       <div class="opsamling-intro">
-        <h1>Opsamling</h1>
-        <p>Vis brugerens valg som et pass, en invitation eller noget andet, der passer til dit event.</p>
-        <div class="actions">
-          <a class="button" href="./form.html">Tilbage til formular</a>
-        </div>
+        <h1>Tak for din tilmelding!</h1>
+        <p>Vi glæder os til at se dig til det sønderjyske kaffebord.</p>
       </div>
 
-      <article class="opsamling-placeholder"></article>
+      <article class="opsamling-placeholder">
+        <h2>Dit tilmeldingsoverblik</h2>
+
+        <p><strong>Navn:</strong> <span id="vis-navn"></span></p>
+        <p><strong>E-mail:</strong> <span id="vis-email"></span></p>
+        <p><strong>Telefon:</strong> <span id="vis-telefon"></span></p>
+        <p><strong>Dato:</strong> <span id="vis-dato"></span></p>
+        <p><strong>Valgt kage:</strong> <span id="vis-kage"></span></p>
+
+        <img id="EventBilleder" src="Roulade.svg" alt="Den valgte kage er en roulade">
+
+        <a class="button" href="./form.html">Tilbage til formular</a>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Det Sønderjyske Kaffebord i København</p>
+      <p>Copyright © Laura og Lisa</p>
     </div>
   </footer>
+
   <script src="./script.js"></script>
 </body>
 

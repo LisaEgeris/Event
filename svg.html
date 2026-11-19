@@ -4,62 +4,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaktiv SVG | Eventnavn</title>
+  <title>Det Sønderjyske Kaffebord</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
-</head>
+  <link rel="icon" type="image/png" sizes="16x16" href="EventBilleder/lilleLogo.png" </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./">Det Sønderjyske Kaffebord i København</a>
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
-          <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html" aria-current="page">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a href="./" aria-current="page">Forside</a></li>
+          <li><a href="./svg.html">Historien Bag</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
         </ul>
-      </nav>
+      </nav>s
     </div>
   </header>
 
   <main>
-    <section class="svg-page">
-      <header class="svg-intro">
-        <h1>Interaktiv SVG</h1>
-        <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
-      </header>
+    <section class="history-section">
 
-      <section class="svg-layout">
-        <div class="svg-placeholder"></div>
+      <div class="history-intro">
+        <h1>Det Sønderjyske Kaffebords Historie</h1>
+        <p>Klik på tekstboksen og lær' historien!</p>
+      </div>
 
-        <article class="panel">
-          <h2>Udforsk eventet</h2>
-          <div class="accordion">
-            <!-- TODO: Lav om til details/summary -->
-            <div class="accordion-item">
-              <h3>Punkt 1</h3>
-              <p>Beskriv første område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 2</h3>
-              <p>Beskriv andet område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 3</h3>
-              <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
-            </div>
+      <div class="history-grid">
+
+        <div class="svg-container">
+          <div class="interaktiv">
+            <svg class="svg-kort" viewBox="0 0 1000 900" aria-hidden="true">
+              <use class="baggrund" href="EventBilleder/billedesvg.svg#baggrund"></use>
+              <use class="kop" href="EventBilleder/billedesvg.svg#kop"></use>
+              <use class="tallerken" href="EventBilleder/billedesvg.svg#tallerken"></use>
+              <use class="kaffekande" href="EventBilleder/billedesvg.svg#kaffekande"></use>
+            </svg>
           </div>
-        </article>
-      </section>
+        </div>
+        <div class="history-text">
+
+          <div class="history-topics">
+
+          </div>
+
+          <div class="topic-content">
+
+            <details id="topicbutton1" class="topic-panel active" id="historie">
+              <summary>Historien bag kaffebordet</summary>
+              <p>
+                Traditionen om det Sønderjyske kaffebord, starter som en modstand til det tyske styre. Vi er tidsmæssigt
+                i 1864, Danmark har lige tabt krigen til Preussen og Sønderjylland er nu en del af det tyske kejserrige.
+                Da det var noget de blot blev underlagt, kæmpede sønderjyderne en brag kamp for at bevare deres sprog,
+                kultur og traditioner. De tyske myndigheder forsøgte at begrænse de danske sammenkomster i
+                forsamlingshuse, hvor der blev sunget og snakket på dansk, derfor begyndte de at samle sig om et
+                kaffebord, da det var langt sværere at forbyde. </p>
+            </details>
+
+            <details id="topicbutton2" class="topic-panel active" id="indhold">
+              <summary>Hvad hører til på et Sønderjysk Kaffebord?</summary>
+              <p>Den traditionelle opbygning af et sønderjysk kaffebord indeholder 21 slags kager. 7 bløde kager, 7
+                tørre kager og 7 hårde kager. Typisk serverede man dem fra bløde til hårde. Det var specielt de
+                sønderjyske kvinder der gjorde det til noget helt specielt, da forsamlingshuse ikke havde køkkener og de
+                derfor medbragte deres hjemmebag. Det blev en lille slags konkurrence om hvem der kunne lave de
+                flotteste og mest smagfulde kager. </p>
+            </details>
+
+            <details id="topicbutton3" class="topic-panel active" id="tradition">
+              <summary>Traditionen i dag</summary>
+              <p>Traditionen om det Sønderjyske kaffebord er i høj grad et symbol på dansk sammenhold og bestemt også
+                noget man stadig samles om den dag i dag. Historien har ændret sig, i dag handler det ikke længere om
+                politisk modstand mod det tyske styre, men om kulturarv, fællesskab, gæstfrihed og lokal identitet. Så
+                næste gang du spiser noget fra et sønderjysk kaffebord, tager du også en lille bid af Danmarkshistorien.
+              </p>
+            </details>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Det Sønderjyske Kaffebord i København</p>
+      <p>Copyright © Laura og Lisa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
